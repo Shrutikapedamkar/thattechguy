@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 20px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(to right, #000000 0%, #1f1f1f 0%, #414141 100%);
+  }
+  .header{
+    height: 100vh;
+    margin: 0!important;
+    padding: 0!important;
+    background-image: linear-gradient(rgba(0, 59, 3, 0.3), rgba(0, 48, 6, 0.3)), url('solarpanel1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+  }
+  .header:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #292929 0%, #1f1f1f 0%, #0e0e0e 100%);
+    opacity: 10%;
+  }
+  .text-white{
+    z-index: 2!important;
+  }
+  .navbar-brand{
+      font-size: 2.3rem;
+      font-family: 'Black Ops One', cursive;
+  }
+  .header-section{
+    width: 100%;
+    height: 80%!important;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .header h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+  }
+  h4{
+    font-family: 'Lobster', cursive;
+    font-size: 1.6rem;
+  }
+  .center-div h1{
+    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+    animation: gogreen 3s;
+  }
+  .extra-div{
+    padding: 10px;
+  }
+  .extra-div p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  }
+/***************MEDIA QUERIES********************/
+  @media(max-width: 992px){
+ 
+    *{
+      overflow: hidden;
+    }
+    .center-div h1{
+      font-size: 3rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  
+  }
+
+/***************KEY FRAMES********************/
+
+  @keyframes gogreen {
+    0%{
+      opacity: 0%;
+    }
+
+    100%{
+      opacity: 100%;
+    }
+  }
